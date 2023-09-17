@@ -157,10 +157,10 @@ const transferir = (req, res) => {
   const senhaConta = verificaSenha(senha, numero_conta_origem);
 
   if (!contaOrigem) {
-    return res.status(400).json({ message: 'Conta de Origem não existe' });
+    return res.status(404).json({ message: 'Conta de Origem não existe' });
   }
   if (!contaDestino) {
-    return res.status(400).json({ message: 'Conta de destino não existe' });
+    return res.status(404).json({ message: 'Conta de destino não existe' });
   }
   if (!senhaConta) {
     return res.status(400).json({ message: 'Senha incorreta' });
