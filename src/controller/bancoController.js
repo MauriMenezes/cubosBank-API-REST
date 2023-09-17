@@ -189,7 +189,7 @@ const saldo = (req, res) => {
   const conta = verificaConta(numero_conta);
   const senhaCorreta = verificaSenha(senha, numero_conta);
   if (!conta) {
-    return res.status(400).json({ mensagem: 'numero da conta incorreto' });
+    return res.status(404).json({ mensagem: 'numero da conta incorreto' });
   }
   if (!senhaCorreta) {
     return res.status(400).json({ mensagem: 'senha incorreta' });
@@ -204,7 +204,7 @@ const extrato = (req, res) => {
   const senhaConta = verificaSenha(senha, numero_conta);
 
   if (!conta) {
-    return res.status(400).json({ message: 'conta não existe' });
+    return res.status(404).json({ message: 'conta não existe' });
   }
   if (!senhaConta) {
     return res.status(400).json({ mensagem: 'senha incorreta' });
