@@ -1,0 +1,85 @@
+module.exports = {
+  banco: {
+    nome: 'Cubos Bank',
+    numero: '123',
+    agencia: '0001',
+    senha: 'Cubos123Bank',
+  },
+  contas: [
+    {
+      numero: '1',
+      saldo: 0,
+      usuario: {
+        nome: 'Miocárdio',
+        cpf: '00011122233',
+        data_nascimento: '2021-03-15',
+        telefone: '71999998888',
+        email: 'foo@bar.com',
+        senha: 'SeguraHeart',
+      },
+    },
+    {
+      numero: '2',
+      saldo: 1000.5,
+      usuario: {
+        nome: 'Alice Smith',
+        cpf: '11122233344',
+        data_nascimento: '1995-07-20',
+        telefone: '71888887777',
+        email: 'alice@example.com',
+        senha: 'P@ssw0rd',
+      },
+    },
+    {
+      numero: '3',
+      saldo: 750.25,
+      usuario: {
+        nome: 'Bob Johnson',
+        cpf: '55566677788',
+        data_nascimento: '1988-04-10',
+        telefone: '71333334444',
+        email: 'bob@example.com',
+        senha: 'SecurePwd123',
+      },
+    },
+    {
+      numero: '4',
+      saldo: 500.0,
+      usuario: {
+        nome: 'Carol Davis',
+        cpf: '99988877766',
+        data_nascimento: '1992-12-05',
+        telefone: '71666665555',
+        email: 'carol@example.com',
+        senha: 'StrongPassword789',
+      },
+    },
+    {
+      numero: '5',
+      saldo: 2500.75,
+      usuario: {
+        nome: 'David Wilson',
+        cpf: '33322211100',
+        data_nascimento: '1980-09-18',
+        telefone: '71111112222',
+        email: 'david@example.com',
+        senha: 'Pass1234!',
+      },
+    },
+    {
+      numero: '6',
+      saldo: 150.1,
+      usuario: {
+        nome: 'Eva Brown',
+        cpf: '77788899911',
+        data_nascimento: '1998-02-25',
+        telefone: '71000001111',
+        email: 'eva@example.com',
+        senha: 'SecretPwd456',
+      },
+    },
+  ],
+  saques: [],
+  depositos: [],
+  transferencias: [],
+};
